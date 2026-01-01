@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show Post</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        h1
+{
+    color:rgb(0, 2, 17);
+    text-align: center;
+}
+h3{
+    text-transform: uppercase;
+}
+h4{
+    text-transform: capitalize;
+
+}
+.container{
+    background-color: rgba(169, 215, 255, 0.93);
+    margin-top:1rem ;
+    border-radius: 1rem;
+}
+*{
+    margin: 0;
+    padding:10px;
+   
+}
+
+
+.forms{
+    margin-left: 100px;
+}
+button{
+    width:100px;
+    height:30px ;
+    background-color: #000bd6;
+    border-radius: 0.4rem;
+    border: none;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <h1>Quora Post App View</h1>
+
+    <br><br>
+    <div class="container">
+       
+        <h3 class="user">#@ <%= post.username %></h3>
+        <h5>ID :<%= post.id %></h5>
+        <h4 class="content"><%= post.content %></h4> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,326 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Assistant", sans-serif;
+    font-weight: 400;
+}
+a{
+    text-decoration: none;
+    color:black;
+}
+button,
+a,
+i {
+    cursor: pointer;
+}
+
+body {
+    background-color: rgba(250, 210, 253, 0.452);
+
+}
+
+.navbar {
+    height: 4rem;
+    max-width: 100%;
+    background-color: #fffefe;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    text-align: center;
+    padding-left: 1rem;
+    position:fixed;
+}
+
+.mainLogo img {
+    width: 2.3rem;
+    height: 2.3rem;
+}
+
+.navblock1 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.navblock1 .search {
+    width: 17rem;
+    height: 2.1rem;
+    border-radius: 0.5rem;
+    border: none;
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: rgba(250, 210, 253, 0.452);
+}
+
+.navblock2 {
+    display: flex;
+    gap: 2rem;
+    color: rgb(113, 109, 109)
+}
+
+.navIcon p {
+
+    font-size: 0.8rem;
+}
+
+.navblock2 .navIcon i {
+    font-size: 1.3rem;
+
+}
+
+.navIcon:hover {
+    color: black;
+}
+
+.navblock3 {
+    display: flex;
+    gap: 2rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    align-items: center;
+    text-align: center;
+    padding-left: 0rem;
+}
+
+.vl {
+    height: 60px;
+    width: 1px;
+    background-color: black;
+
+}
+
+/* section1 */
+
+.section1 {
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    width: 32rem;
+    height: 10rem;
+
+
+}
+
+.section1 .sec1Part1 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+
+}
+.sec1Image img{
+    width: 3.8rem;
+    height: 3.8rem;
+}
+.sec1Part1 .sec1Image {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(250, 210, 253, 0.651);
+}
+
+.sec1Part1 .post-Btn {
+    padding-left: 1rem;
+    width: 20rem;
+    height: 3.2rem;
+    font-weight: 650;
+    text-align: start;
+    border-radius: 1.8rem;
+    border-width: thin;
+    border-color: rgb(54, 54, 54);
+    background-color: transparent;
+}
+
+.sec1Part2 {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+}
+
+.contain {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    text-align: center;
+
+}
+
+.contain i {
+    font-size: larger;
+}
+
+
+/* post-style */
+.post-header {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.post-containt {
+    margin: auto;
+    background-color: white;
+    border-radius: 1rem;
+    border: none;
+    width: 30rem;
+    padding: 1rem;
+
+}
+
+.post-containt .sec1Image {
+    width: 3.8rem;
+    height: 3.8rem;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(250, 210, 253, 0.452);
+}
+.cross{
+display: flex;
+align-items: center;
+justify-content: space-between;
+width: 24rem;
+
+}
+.cross button{
+  background-color: transparent;
+  border: none;
+  font-size:larger;
+  font-weight: 700;
+}
+.cross button:hover{
+    color:red;
+}
+
+.userName h2{
+   font-size: large;
+   font-weight: 600;
+   text-transform:capitalize ;
+
+}
+.bio{
+    display: flex;
+    align-items: center;
+    gap:0.5rem;
+   
+
+}
+.bio p{
+    font-size:0.7rem;
+    text-transform:capitalize ;
+}
+.post-info h3{
+    font-size:smaller;
+    font-weight: 700;
+    padding:0.3rem
+    
+}
+.contain {
+    font-size: small;
+    font-weight: 450;
+    padding:0.3rem
+}
+.post{
+  width: 30rem;
+  height: 25rem;
+  background-color: aqua;
+}
+.post img{
+    width: 30rem;
+    height: 25rem;
+}
+
+.post-footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    padding-top:1rem;
+   
+}
+.post-footer-i{
+    display: flex;
+    gap: 0.5rem;
+    font-size: smaller;
+    font-weight: 600;
+
+    color: rgb(86, 86, 86);
+
+
+}
+.post-footer-i i{
+   font-weight: 600;
+   font-size: large;
+   align-items: center;
+   text-align: center;
+   color: grey;
+}
+
+/* post data */
+
+.postData{
+    margin:auto;
+    width:50rem;
+    background-color: white;
+    border-radius:1rem;
+    border:none;
+    padding: 1rem;
+    margin-top: 1rem;
+
+
+}
+
+.DataFooter{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+.inputData {
+    gap: 1rem;
+    margin-top: 1rem;
+    margin-left: 14rem;
+}
+.inputData input{
+    width:21rem;
+    height: 2rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: rgba(250, 210, 253, 0.452);
+    padding-left: 1rem;
+    text-align: start;
+    color: rgb(83, 82, 82);
+    margin: auto;
+
+}
+.inputData textarea{
+    width:20rem;
+    height: 4rem;
+    border-radius: 0.7rem;
+    border: none;
+    background-color: rgba(250, 210, 253, 0.452);
+    text-align: start;
+    color: rgb(83, 82, 82);
+    padding: 1rem;
+  
+}
+
+#postBtn{
+   width: 15rem;
+    height:2rem;
+    background-color: blue;
+    color: white;
+    border-radius: 1rem;
+    border: none;
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin-left: 6rem;
+    padding-top: 0.5rem;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Post</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    button{
+    width:100px;
+    height:30px ;
+    background-color: #000bd6;
+    border-radius: 0.4rem;
+    border: none;
+    color: white;
+    margin-left: 250px;
+}
+h2{
+    text-align: center;
+}
+</style>
+</head>
+<body>
+    <h2>Edit Your Post</h2>
+     <div class="container">
+        <h3>Username :<%= post.username %></h3>
+        <h5>Post ID:<%= post.id %></h5>
+     </div>
+     <form action="/posts/<%= post.id %>?_method=PATCH" method="post">
+        <textarea name="content" id="" placeholder='<%=post.content%>' style="height: 200px; width: 400px; padding: 10px;margin-left: 100px; background-color: rgba(127, 255, 212, 0.673);" ></textarea><br>
+        <button class="btn">Submit</button>
+     </form>
+</body>
+</html>
