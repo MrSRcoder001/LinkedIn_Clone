@@ -1,0 +1,42 @@
+.Main-container {
+    color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 1rem;
+}
+
+.price {
+    width: 17rem;
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(248, 225, 75);
+    padding: 1rem;
+    padding-left: 2rem;
+    color: black;
+
+
+}
+
+.imageBox {
+    background-color: rgba(240, 237, 230, 0.456);
+    width: 16rem;
+    height: 9rem;
+    margin: 0.1rem;
+    border-radius: 0.6rem;
+
+
+}
+
+.Sell-Box {
+    height: 22rem;
+    width: 17rem;
+    background-color: rgb(190, 237, 0);
+    color: black;
+    text-transform: capitalize;
+    border-radius: 1rem;
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: start;
+    margin-bottom: 0.1rem;
+}
