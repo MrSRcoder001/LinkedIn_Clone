@@ -7,7 +7,7 @@ export default function WeatherApp() {
     const [weather, setWeather] = useState({
         city: "Delhi",
         temp: 20.2,
-        tempMin: 25.50,
+        tempMin: 25.50,~
         tempMax: 35.20,
         humidity: 48,
         feelsLike: 22.39,

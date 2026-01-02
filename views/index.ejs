@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn APP</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="navbar">
+        <div class="navblock1">
+            <div class="mainLogo"><img src="LinkedIn.png" alt=""></div>
+            <input type="search" name="search" class="search" placeholder=" Search here">
+        </div>
+        <div class="navblock2">
+            <div class="navIcon">
+                <i class="fa-solid fa-house-user"></i>
+                <p>Home</p>
+            </div>
+            <div class="navIcon" style="width:4rem">
+                <i class="fa-solid fa-globe"></i>
+                <p>My NetWork</p>
+            </div>
+            <div class="navIcon">
+                <i class="fa-solid fa-briefcase"></i>
+                <p>Job</p>
+            </div>
+            <div class="navIcon">
+                <i class="fa-solid fa-message"></i>
+                <p>Messaging</p>
+            </div>
+            <div class="navIcon">
+                <i class="fa-solid fa-bell"></i>
+                <p>Notification</p>
+            </div>
+            <div class="navIcon" style="width:3rem">
+                <i class="fa-solid fa-image-portrait"></i>
+                <p>Its me</p>
+            </div>
+        </div>
+        <div class="vl"></div>
+        <div class="navblock3">
+            <div class="navIcon">
+                <i class="fa-solid fa-building"></i>
+                <p>For Business</p>
+            </div>
+            <div class="navIcon">
+                <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                <p>For Premium</p>
+            </div>
+        </div>
+    </div>
+    <br><BR></BR>
+    <hr style="margin-top:3px;"><br>
+    <div class="section1">
+        <div class="sec1Part1">
+            <div class="sec1Image">
+                <img src="vp.png" alt="">
+            </div>
+           <a href="http://localhost:3000/post"><button class="post-Btn" onclick="">Start a Post</button></a>
+        </div>
+        <div class="sec1Part2">
+            <a href="http://localhost:3000/post"> <div class="contain"><i class="fa-solid fa-image" style="color:rgb(0, 132, 255)"></i>
+                <p>Photo</p>
+            </div></a>
+            <a href="http://localhost:3000/post"><div class="contain"><i class="fa-solid fa-video" style="color:rgb(0, 134, 0)"></i>Video</div></a>
+            <a href="http://localhost:3000/post"><div class="contain"><i class="fa-solid fa-newspaper" style="color:rgb(254, 68, 0)"></i>Write article</div></a>
+        </div>
+    </div>
+    <br>
+    <% for(let post of posts){ %>
+        <div class="post-containt">
+            <div class="post-header">
+                <div class="sec1Image">
+                    <img src="<%=post.logo%>" alt="">
+                </div>
+                <div class="userName">
+                    <div class="cross">
+                    <h2>
+                        <%=post.username%>
+                    </h2>
+                    <form action="/index/<%=post.id%>?_method=DELETE" method="post">
+                    <a href="http://localhost:3000/index/<%=post.id %>/delete"><button>X</button></a></form>
+                </div>
+                    <div class="bio">
+                        <p>
+                            <%=post.bio%>
+                        </p>|
+                    </div>
+                </div>
+            </div>
+            <div class="post-info">
+                <h3>
+                    <%= post.imgHeading %>
+                </h3>
+            </div>
+            <p class="contain">
+                <%=post.content%>
+            </p>
+            <hr>
+            <div class="post">
+                <img src="<%=post.img%>" alt="">
+            </div>
+            <br>
+            <hr>
+            <div class="post-footer">
+                <div class="post-footer-i"><i class="fa-solid fa-thumbs-up"></i>LIke</div>
+                <div class="post-footer-i"><i class="fa-solid fa-comment"></i> Comment</div>
+                <div class="post-footer-i"><i class="fa-solid fa-flag"></i> Report</div>
+                <div class="post-footer-i"><i class="fa-solid fa-paper-plane"></i> Send</div>
+            </div>
+        </div>
+        <br>
+        <% } %>
+</body>
+
+</html>
